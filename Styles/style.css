@@ -1,0 +1,11 @@
+.escudos {
+    max-height: 2rem;
+}
+
+.mostrar {
+    display: block;
+}
+
+.esconder {
+    display: none;
+}
