@@ -26,6 +26,12 @@ function getFetch(){
         boton.addEventListener("click", ()=>{
             datosFiltrados(partidos);
         });
+
+        let botonClear = document.getElementById("limpiarBusqueda");
+        botonClear.addEventListener("click", ()=>{
+        document.getElementById("equipo").value = "";
+        getFetch();
+        });
     })       
 }
 getFetch() //función global dentro de la que después de recibir los datos (recibidos en data), empezamos a llamar a las funciones
