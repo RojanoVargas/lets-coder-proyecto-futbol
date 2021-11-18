@@ -1,3 +1,21 @@
+body {
+    margin: 20px;
+    padding: 20px;
+}
+
+.white {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.fondo-cesped {
+    background-image: url(/img/cesped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .escudos {
     max-height: 2rem;
 }
@@ -8,4 +26,25 @@
 
 .esconder {
     display: none;
+}
+
+.flex div{
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+}
+
+.imagen-home {
+    /* width: 40vw; */
+    width: 800px;
+    align-items: center;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.imagen-home:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
