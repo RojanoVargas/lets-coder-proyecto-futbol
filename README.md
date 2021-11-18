@@ -1,30 +1,38 @@
 # README.MD
 Dos tablas que reciben datos desde una API externa y muestran estadísticas de los partidos y de la clasificación de LaLiga Santander.
 
-## Contenido
-El proyecto tiene dos tablas en html: clasificacion y partidos. Ambas tablas utilizan Bootstrap y estilos propios. **clasificacion** recibe el script funcion-clasificacion-fetch.js y **partidos** el script funcion-partidos-fetch.js.
-
 
 ## Demo
 Puede verse una versión web de este proyecto en [Demo del proyecto](https://vibrant-jennings-99c6ef.netlify.app/)
 
-## How to clone
-If you have special requirements, you have to list it step by step.
-* This is the first step
-* Then you have to do this
-* Finally do this
 
-Markdown has enumation and nested lists.
+## Funcionalidades
 
-## Installation
-To install and run this proyect just type and execute
-```bash
-npm install
-```
-## Vista previa
-Las tablas se deberían ver así:
+- Acceso a la clasificación en tiempo real
+- Acceso a los resultados en tiempo real
+- Posibilidad de filtrar por equipos la tabla de partidos
 
-![](/preview.jpg)
 
-### Notes
-If you want to learn all about markdown i recommend you visit the site [markdown.es](https://markdown.es/sintaxis-markdown/)
+## Tecnologías empleadas
+
+- HTML - para la estructura
+- CSS3 y Bootstrap - Bootstrap para los estilos generales y CSS3 para pequeños cambios a posteriori
+- Javascript: para llamar a las API e imprimir los resultados en pantalla en **clasificacion** y **partidos**. También para dar funcionalidad al buscador en **partidos**
+
+
+## Descripción técnica del proyecto
+
+La página de **clasificacion** recibe información de una de las dos API externas (https://api.football-data.org/v2/competitions/2014/standings). Mientras carga los datos, un spinner aparece en pantalla y este desaparece cuando se imprime la tabla. La función "getFetch" llama a los datos y "infoClasificacion" genera una tabla y los imprime en esta.
+
+La página de **partidos** funciona de manera similar pero añade las funcionalidades de filtrar por equipo con "datosFiltrados". 
+
+
+## Versiones
+
+Versión 1.0: 18 de noviembre de 2021.
+
+
+## Mejoras del proyecto
+
+- Añadir distintos tipos de filtro para la tabla. Por ejemplo, poder ver solo la última jornada jugada.
+- Mejorar los estilos en las tres páginas, para dar más dinamismo y aprovechar de manera más extensiva las opciones que ofrece Bootstrap.
