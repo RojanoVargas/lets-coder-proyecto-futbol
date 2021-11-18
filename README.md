@@ -6,7 +6,7 @@ El proyecto tiene dos tablas en html: clasificacion y partidos. Ambas tablas uti
 
 
 ## Demo
-Puede verse una versión web de este proyecto en [Demo del proyecto](https://netlify.com/hlghghjgkhjgkhjgkhj)
+Puede verse una versión web de este proyecto en [Demo del proyecto](https://vibrant-jennings-99c6ef.netlify.app/)
 
 ## How to clone
 If you have special requirements, you have to list it step by step.
